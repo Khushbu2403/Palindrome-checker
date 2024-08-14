@@ -10,6 +10,7 @@ function palindromeChecker(str){
   }else{
   let string=suitableStr(str);
   for(let i =1; i<=string.length; i++){
+    result.classList.remove("hidden");
     if(string[i-1]==string[string.length-i]){
       result.innerText=`${str} is a palindrome`;
       input.value="";
